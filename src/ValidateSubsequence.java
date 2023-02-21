@@ -28,8 +28,8 @@ public class ValidateSubsequence {
     public static void main(String[] args) {
         boolean result = ValidateSubsequence.validateSubsequence(new int[] { 5, 1, 22, 25, 6, -1, 8, 10 },
                 new int[] { 1, 6, -1, 10 });
-        boolean result1 = ValidateSubsequence.validateSubsequence(new int[] { 5, 1, 22, 25, 6, -1, 8, 10 },
+        boolean result1 = ValidateSubsequence.validateSubsequenceForLoop(new int[] { 5, 1, 22, 25, 6, -1, 8, 10 },
                 new int[] { 1, 6, -1, 10 });
-        System.out.println("Valid subsequence: " + Boolean.valueOf(result).toString());
+        System.out.println("Valid subsequence: " + Boolean.valueOf(result1).toString());
     }
 }
