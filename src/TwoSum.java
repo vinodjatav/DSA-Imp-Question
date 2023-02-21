@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 
 public class TwoSum {
-    // Using HashMap: O(N)
+    // Using HashMap: O(n) time
     public static int[] twoSum(int[] nums, int target) {
         HashMap<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
@@ -15,7 +15,7 @@ public class TwoSum {
         return null;
     }
 
-    // Using two pointer: O(N*log(N)
+    // Using two pointer: O(n*log(n) time
     public static int[] twoSumUsingSorting(int[] nums, int target) {
         Arrays.sort(nums);
         int i = 0;
