@@ -1,3 +1,4 @@
+package Easy;
 public class ValidateSubsequence {
     // Concept of Subsequence : using while loop
     // O(n) time | o(1) space
