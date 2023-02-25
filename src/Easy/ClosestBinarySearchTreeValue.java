@@ -61,7 +61,7 @@ public class ClosestBinarySearchTreeValue {
                 : containsNodeRecursive(current.right, value);
     }
 
-    public boolean containsNode(int value){
+    public boolean containsNode(int value) {
         return containsNodeRecursive(root, value);
     }
 

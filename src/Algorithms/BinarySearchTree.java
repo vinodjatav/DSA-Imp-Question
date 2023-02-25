@@ -1,4 +1,4 @@
-package Easy;
+package Algorithms;
 
 public class BinarySearchTree {
     public class Node {
