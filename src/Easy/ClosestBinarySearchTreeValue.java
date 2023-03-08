@@ -36,7 +36,7 @@ public class ClosestBinarySearchTreeValue {
         root = addRecursive(root, value);
     }
 
-    private ClosestBinarySearchTreeValue createBinarySearchTree() {
+    private static ClosestBinarySearchTreeValue createBinarySearchTree() {
         ClosestBinarySearchTreeValue bt = new ClosestBinarySearchTreeValue();
         bt.add(10);
         bt.add(8);
@@ -64,8 +64,21 @@ public class ClosestBinarySearchTreeValue {
     public boolean containsNode(int value) {
         return containsNodeRecursive(root, value);
     }
+    // Best case: o(log(n)) time | o(log(n)) space 
+    // Worst case: o(n) time | o(n) space
+    public static int closestValue(Node root, float target) {
+        Node childNode = target < root.value ? root.left : root.right;
+        if(childNode == null)
+            return root.value;
+        int childClosest = closestValue(childNode, target);
+        return Math.abs(root.value-target)<Math.abs(childClosest - target)? root.value: childClosest;
+    }
 
     public static void main(String[] args) {
-        System.out.println("Closest binary search tree value.");
+        ClosestBinarySearchTreeValue bst = ClosestBinarySearchTreeValue.createBinarySearchTree();
+        
+        int result = ClosestBinarySearchTreeValue.closestValue(bst.root, 7.0f);
+        
+        System.out.println("Closest binary search tree value: "+ result);
     }
 }
