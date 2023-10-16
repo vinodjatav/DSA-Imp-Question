@@ -1,4 +1,4 @@
-package DSA_Revision;
+package DSA_Revision.Arrays;
 
 import java.util.Arrays;
 

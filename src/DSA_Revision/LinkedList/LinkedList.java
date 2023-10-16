@@ -1,4 +1,4 @@
-package DSA_Revision;
+package DSA_Revision.LinkedList;
 
 public class LinkedList {
     Node head;

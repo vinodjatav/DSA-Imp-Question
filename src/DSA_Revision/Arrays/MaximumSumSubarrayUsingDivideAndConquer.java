@@ -1,4 +1,4 @@
-package DSA_Revision;
+package DSA_Revision.Arrays;
 
 public class MaximumSumSubarrayUsingDivideAndConquer {
     public static int maxCrossingSum(int[] arr, int l, int m, int r) {
