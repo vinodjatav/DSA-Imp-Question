@@ -34,11 +34,11 @@ public class LinkedList {
 
     public static void printList(LinkedList list) {
         Node currNode = list.head;
-        System.out.println("Linked list: ");
         while (currNode != null) {
-            System.out.println(currNode.data + " ");
+            System.out.print(currNode.data + "=>");
             currNode = currNode.next;
         }
+        System.out.println("NULL");
     }
 
     public static void main(String[] args) {
