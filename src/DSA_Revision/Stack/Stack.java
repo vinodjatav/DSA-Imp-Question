@@ -3,7 +3,7 @@ package DSA_Revision.Stack;
 public class Stack {
     static final int MAX = 1000;
     int top;
-    int a[] = new int[MAX]; // Max size of stack
+    char a[] = new char[MAX]; // Max size of stack
 
     boolean isEmpty() {
         return top < 0;
@@ -13,7 +13,7 @@ public class Stack {
         top = -1;
     }
 
-    boolean push(int x) {
+    boolean push(char x) {
         if (top >= (MAX - 1)) {
             System.out.println("Stack Overflow");
             return false;
@@ -24,22 +24,22 @@ public class Stack {
         }
     }
 
-    int pop() {
+    char pop() {
         if (top < 0) {
             System.out.println("Stack Underflow");
             return 0;
         } else {
-            int x = a[top--];
+            char x = a[top--];
             return x;
         }
     }
 
-    int peek() {
+    char peek() {
         if (top < 0) {
             System.out.println("Stack Underflow");
             return 0;
         } else {
-            int x = a[top];
+            char x = a[top];
             return x;
         }
     }
@@ -48,11 +48,11 @@ public class Stack {
         System.out.println("Basic implementation of a stack: ");
 
         Stack st = new Stack();
-        st.push(10);
-        st.push(20);
-        st.push(30);
-        st.push(40);
-        st.push(50);
+        st.push('a');
+        st.push('b');
+        st.push('c');
+        st.push('d');
+        st.push('e');
         System.out.println(st.pop() + " Popped from stack");
         System.out.println(st.peek() + " Peek from stack");
     }
