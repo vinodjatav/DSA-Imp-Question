@@ -1,7 +1,7 @@
 package DSA_Revision.Stack;
 
 public class NextGreaterElement {
-    // TC- O(N^2), AS- O(1)
+    // TC- O(N^2), SC- O(1)
     public static void NGE(int[] arr) {
         int i, j, next;
         for (i = 0; i < arr.length; i++) {
